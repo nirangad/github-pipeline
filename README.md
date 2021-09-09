@@ -1,2 +1,2 @@
 # github-pipeline
-Trying out Github CI/CD
+Trying out Github Pipepile for CI/CD
