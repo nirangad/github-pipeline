@@ -1,11 +1,11 @@
-name: "Github Workflow - Integrate"
+name: "Github Workflow - Deploy"
 
 on:
-  pull_request:
+  push:
     branches: [main]
 
 jobs:
-  test_pull_request:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
