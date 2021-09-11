@@ -1,8 +1,8 @@
-name: "Github Workflow try out"
+name: "Github Workflow"
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   test_pull_request:
@@ -13,4 +13,5 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm run dev
+      - run: npm test
+      - run: npm run build
